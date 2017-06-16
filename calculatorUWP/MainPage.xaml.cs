@@ -5,7 +5,6 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -13,10 +12,11 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Diagnostics;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace calculatorUWP
+namespace CalculatorUWP
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -42,7 +42,8 @@ namespace calculatorUWP
         {
             Button btn = (Button)sender;
             //Just boot up or just finished around of calculation
-            if (finishedAround){
+            if (finishedAround)
+            {
                 numStr = btn.Content.ToString();
                 finishedAround = false;
             }
@@ -77,11 +78,12 @@ namespace calculatorUWP
             {
                 firstOperand = firstOperand / secondOperand;
             }
-            else if (currOperator == "X") {
+            else if (currOperator == "X")
+            {
                 firstOperand = firstOperand * secondOperand;
             }
             //reset operator
-            currOperator = ""; 
+            currOperator = "";
             numStr = firstOperand.ToString();
             Display.Text = numStr;
             finishedAround = true;
@@ -96,6 +98,12 @@ namespace calculatorUWP
             currOperator = "";
             Display.Text = numStr;
             finishedAround = true;
+        }
+
+
+        private void GotoLogin(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(LoginPage));
         }
     }
 }

@@ -1,7 +1,7 @@
 {
   "version": 2,
   "targets": {
-    "UAP,Version=v10.0.10586": {
+    "UAP,Version=v10.0.10240": {
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -2170,7 +2170,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-arm": {
+    "UAP,Version=v10.0.10240/win10-arm": {
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -4422,7 +4422,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-arm-aot": {
+    "UAP,Version=v10.0.10240/win10-arm-aot": {
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -6713,7 +6713,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-x64": {
+    "UAP,Version=v10.0.10240/win10-x64": {
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -8974,7 +8974,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-x64-aot": {
+    "UAP,Version=v10.0.10240/win10-x64-aot": {
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -11274,7 +11274,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-x86": {
+    "UAP,Version=v10.0.10240/win10-x86": {
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -13535,7 +13535,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-x86-aot": {
+    "UAP,Version=v10.0.10240/win10-x86-aot": {
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -22005,26 +22005,26 @@
     }
   },
   "projectFileDependencyGroups": {
-    "UAP,Version=v10.0.10586": [
+    "UAP,Version=v10.0.10240": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hank2\\.nuget\\packages\\": {}
+    "C:\\Users\\Baiyubest\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\hank2\\onedrive\\documents\\visual studio 2017\\Projects\\calculatorUWP\\calculatorUWP\\calculatorUWP.csproj",
-      "projectName": "calculatorUWP",
-      "projectPath": "c:\\users\\hank2\\onedrive\\documents\\visual studio 2017\\Projects\\calculatorUWP\\calculatorUWP\\calculatorUWP.csproj",
-      "outputPath": "c:\\users\\hank2\\onedrive\\documents\\visual studio 2017\\Projects\\calculatorUWP\\calculatorUWP\\obj\\",
+      "projectUniqueName": "C:\\Users\\Baiyubest\\Documents\\Visual Studio 2017\\Projects\\CalculatorUWP\\CalculatorUWP\\CalculatorUWP.csproj",
+      "projectName": "CalculatorUWP",
+      "projectPath": "C:\\Users\\Baiyubest\\Documents\\Visual Studio 2017\\Projects\\CalculatorUWP\\CalculatorUWP\\CalculatorUWP.csproj",
+      "outputPath": "C:\\Users\\Baiyubest\\Documents\\Visual Studio 2017\\Projects\\CalculatorUWP\\CalculatorUWP\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
-        "uap10.0.10586"
+        "uap10.0.10240"
       ],
       "frameworks": {
-        "uap10.0.10586": {
+        "uap10.0.10240": {
           "projectReferences": {}
         }
       }
@@ -22036,7 +22036,7 @@
       }
     },
     "frameworks": {
-      "uap10.0.10586": {
+      "uap10.0.10240": {
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",

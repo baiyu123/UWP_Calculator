@@ -7,22 +7,22 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="5d2e82bd-282c-4ffe-844f-4f5baefb0730" Publisher="CN=hank2" Version="1.0.0.0" ProcessorArchitecture="x86" />
-  <mp:PhoneIdentity PhoneProductId="5d2e82bd-282c-4ffe-844f-4f5baefb0730" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="9c2cda0a-ff42-4053-b0d6-85a8681b83b6" Publisher="CN=Baiyubest" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <mp:PhoneIdentity PhoneProductId="9c2cda0a-ff42-4053-b0d6-85a8681b83b6" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>calculatorUWP</DisplayName>
-    <PublisherDisplayName>hank2</PublisherDisplayName>
+    <DisplayName>CalculatorUWP</DisplayName>
+    <PublisherDisplayName>Baiyubest</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10586.0" MaxVersionTested="10.0.15063.0" />
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.15063.0" />
   </Dependencies>
   <Resources>
     <Resource Language="EN-US" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="calculatorUWP.exe" EntryPoint="calculatorUWP.App">
-      <uap:VisualElements DisplayName="calculatorUWP" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="calculatorUWP" BackgroundColor="transparent">
+    <Application Id="App" Executable="CalculatorUWP.exe" EntryPoint="CalculatorUWP.App">
+      <uap:VisualElements DisplayName="CalculatorUWP" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="CalculatorUWP" BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
@@ -37,7 +37,7 @@
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2017" />
     <build:Item Name="OperatingSystem" Version="10.0.15063.0 (WinBuild.160101.0800)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.26419.1" />
-    <build:Item Name="ProjectGUID" Value="{8DCCC608-695F-488A-BB79-52F11735C474}" />
+    <build:Item Name="ProjectGUID" Value="{72BCD0D5-F697-4B49-A6D7-D0DC23F56407}" />
     <build:Item Name="OptimizingToolset" Value="None" />
     <build:Item Name="TargetRuntime" Value="Managed" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="15.0.26419.1" />

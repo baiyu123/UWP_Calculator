@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="5d2e82bd-282c-4ffe-844f-4f5baefb0730"
-    Publisher="CN=hank2"
+    Name="9c2cda0a-ff42-4053-b0d6-85a8681b83b6"
+    Publisher="CN=Baiyubest"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="5d2e82bd-282c-4ffe-844f-4f5baefb0730" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="9c2cda0a-ff42-4053-b0d6-85a8681b83b6" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>calculatorUWP</DisplayName>
-    <PublisherDisplayName>hank2</PublisherDisplayName>
+    <DisplayName>CalculatorUWP</DisplayName>
+    <PublisherDisplayName>Baiyubest</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="calculatorUWP.App">
+      EntryPoint="CalculatorUWP.App">
       <uap:VisualElements
-        DisplayName="calculatorUWP"
+        DisplayName="CalculatorUWP"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="calculatorUWP"
+        Description="CalculatorUWP"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />

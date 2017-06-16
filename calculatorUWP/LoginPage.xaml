@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="CalculatorUWP.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CalculatorUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <!--center grid-->
+        <Border Grid.Column="1" Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+            <Grid Grid.Column="1" Grid.Row="1" MinHeight="220">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Margin="10,10,10,10" TextWrapping="Wrap" Text="Username" VerticalAlignment="Center"/>
+                <TextBox x:Name="userNameTextBox" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Margin="10,10,10,10" Width="130" Text="" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" Margin="10,10,10,10" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center"/>
+                <TextBox x:Name="passwordTextBox" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Margin="10,10,10,10" Width="130" Text="" VerticalAlignment="Center"/>
+                <Button Grid.Column="0" Grid.Row="2" Content="Login" HorizontalAlignment="Center" Width="80" Margin="10,10,10,10" VerticalAlignment="Center" Click="Click_Login"/>
+                <Button Grid.Column="1" Grid.Row="2" Content="Register" HorizontalAlignment="Right"  Width="80"  Margin="10,10,10,10" VerticalAlignment="Center" Click="Click_Register"/>
+                <Button Grid.Column="0" Grid.Row="3" Content="Back" HorizontalAlignment="Center"  Width="80" Margin="10,10,10,10"  VerticalAlignment="Top"/>
+                <TextBlock x:Name="messageBox" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Margin="10,10,0,0"  TextWrapping="Wrap" Width="120" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.516,0.9" FontSize="9"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

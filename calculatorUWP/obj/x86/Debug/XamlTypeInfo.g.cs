@@ -9,11 +9,11 @@
 
 
 
-namespace calculatorUWP
+namespace CalculatorUWP
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-    private global::calculatorUWP.calculatorUWP_XamlTypeInfo.XamlTypeInfoProvider _provider;
+    private global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlTypeInfoProvider _provider;
 
         /// <summary>
         /// GetXamlType(Type)
@@ -22,7 +22,7 @@ namespace calculatorUWP
         {
             if(_provider == null)
             {
-                _provider = new global::calculatorUWP.calculatorUWP_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByType(type);
         }
@@ -34,7 +34,7 @@ namespace calculatorUWP
         {
             if(_provider == null)
             {
-                _provider = new global::calculatorUWP.calculatorUWP_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByName(fullName);
         }
@@ -49,7 +49,7 @@ namespace calculatorUWP
     }
 }
 
-namespace calculatorUWP.calculatorUWP_XamlTypeInfo
+namespace CalculatorUWP.CalculatorUWP_XamlTypeInfo
 {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -132,15 +132,17 @@ namespace calculatorUWP.calculatorUWP_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "calculatorUWP.MainPage";
+            _typeNameTable = new string[4];
+            _typeNameTable[0] = "CalculatorUWP.LoginPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "CalculatorUWP.MainPage";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::calculatorUWP.MainPage);
+            _typeTable = new global::System.Type[4];
+            _typeTable[0] = typeof(global::CalculatorUWP.LoginPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::CalculatorUWP.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -175,31 +177,39 @@ namespace calculatorUWP.calculatorUWP_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::calculatorUWP.MainPage(); }
+        private object Activate_0_LoginPage() { return new global::CalculatorUWP.LoginPage(); }
+        private object Activate_3_MainPage() { return new global::CalculatorUWP.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
-            global::calculatorUWP.calculatorUWP_XamlTypeInfo.XamlSystemBaseType xamlType = null;
-            global::calculatorUWP.calculatorUWP_XamlTypeInfo.XamlUserType userType;
+            global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlSystemBaseType xamlType = null;
+            global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlUserType userType;
             string typeName = _typeNameTable[typeIndex];
             global::System.Type type = _typeTable[typeIndex];
 
             switch (typeIndex)
             {
 
-            case 0:   //  calculatorUWP.MainPage
-                userType = new global::calculatorUWP.calculatorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+            case 0:   //  CalculatorUWP.LoginPage
+                userType = new global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_0_LoginPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
             case 1:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::calculatorUWP.calculatorUWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::calculatorUWP.calculatorUWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  CalculatorUWP.MainPage
+                userType = new global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;
@@ -209,7 +219,7 @@ namespace calculatorUWP.calculatorUWP_XamlTypeInfo
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
-            global::calculatorUWP.calculatorUWP_XamlTypeInfo.XamlMember xamlMember = null;
+            global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlMember xamlMember = null;
             // No Local Properties
             return xamlMember;
         }
@@ -264,9 +274,9 @@ namespace calculatorUWP.calculatorUWP_XamlTypeInfo
 
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class XamlUserType : global::calculatorUWP.calculatorUWP_XamlTypeInfo.XamlSystemBaseType
+    internal class XamlUserType : global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlSystemBaseType
     {
-        global::calculatorUWP.calculatorUWP_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlTypeInfoProvider _provider;
         global::Windows.UI.Xaml.Markup.IXamlType _baseType;
         bool _isArray;
         bool _isMarkupExtension;
@@ -280,7 +290,7 @@ namespace calculatorUWP.calculatorUWP_XamlTypeInfo
         global::System.Collections.Generic.Dictionary<string, string> _memberNames;
         global::System.Collections.Generic.Dictionary<string, object> _enumValues;
 
-        public XamlUserType(global::calculatorUWP.calculatorUWP_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
+        public XamlUserType(global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
             :base(fullName, fullType)
         {
             _provider = provider;
@@ -472,7 +482,7 @@ namespace calculatorUWP.calculatorUWP_XamlTypeInfo
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {
-        global::calculatorUWP.calculatorUWP_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlTypeInfoProvider _provider;
         string _name;
         bool _isAttachable;
         bool _isDependencyProperty;
@@ -481,7 +491,7 @@ namespace calculatorUWP.calculatorUWP_XamlTypeInfo
         string _typeName;
         string _targetTypeName;
 
-        public XamlMember(global::calculatorUWP.calculatorUWP_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
+        public XamlMember(global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
         {
             _name = name;
             _typeName = typeName;
