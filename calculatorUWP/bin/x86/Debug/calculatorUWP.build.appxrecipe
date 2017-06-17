@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>9c2cda0a-ff42-4053-b0d6-85a8681b83b6</PackageIdentityName>
     <PackageIdentityPublisher>CN=Baiyubest</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\CalculatorUWP\CalculatorUWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\CalculatorUWP\CalculatorUWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\CalculatorUWP\CalculatorUWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\CalculatorUWP\CalculatorUWP\bin\x86\Debug\CalculatorUWP.exe">
+    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\bin\x86\Debug\CalculatorUWP.exe">
       <PackagePath>entrypoint\CalculatorUWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Baiyubest\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
@@ -373,47 +373,47 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\MySQL\MySQL Connector Net 6.7.9\Assemblies\RT\MySql.Data.RT.dll">
       <PackagePath>MySql.Data.RT.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\CalculatorUWP\CalculatorUWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\CalculatorUWP\CalculatorUWP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\CalculatorUWP\CalculatorUWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\CalculatorUWP\CalculatorUWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\CalculatorUWP\CalculatorUWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\CalculatorUWP\CalculatorUWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\CalculatorUWP\CalculatorUWP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\CalculatorUWP\CalculatorUWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\CalculatorUWP\CalculatorUWP\bin\x86\Debug\CalculatorUWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\bin\x86\Debug\CalculatorUWP.xr.xml">
       <PackagePath>CalculatorUWP.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\CalculatorUWP\CalculatorUWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\CalculatorUWP\CalculatorUWP\bin\x86\Debug\Core\CalculatorUWP.exe">
+    <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\bin\x86\Debug\Core\CalculatorUWP.exe">
       <PackagePath>CalculatorUWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

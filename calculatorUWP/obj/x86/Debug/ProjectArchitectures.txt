@@ -1,1 +1,1 @@
-C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\CalculatorUWP\CalculatorUWP\CalculatorUWP.csproj;x86
+C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\CalculatorUWP.csproj;x86

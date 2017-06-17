@@ -37,7 +37,7 @@
                 <TextBox x:Name="passwordTextBox" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Margin="10,10,10,10" Width="130" Text="" VerticalAlignment="Center"/>
                 <Button Grid.Column="0" Grid.Row="2" Content="Login" HorizontalAlignment="Center" Width="80" Margin="10,10,10,10" VerticalAlignment="Center" Click="Click_Login"/>
                 <Button Grid.Column="1" Grid.Row="2" Content="Register" HorizontalAlignment="Right"  Width="80"  Margin="10,10,10,10" VerticalAlignment="Center" Click="Click_Register"/>
-                <Button Grid.Column="0" Grid.Row="3" Content="Back" HorizontalAlignment="Center"  Width="80" Margin="10,10,10,10"  VerticalAlignment="Top"/>
+                <Button Grid.Column="0" Grid.Row="3" Content="Back" HorizontalAlignment="Center"  Width="80" Margin="10,10,10,10"  VerticalAlignment="Top" Click="Click_back"/>
                 <TextBlock x:Name="messageBox" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Margin="10,10,0,0"  TextWrapping="Wrap" Width="120" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.516,0.9" FontSize="9"/>
             </Grid>
         </Border>

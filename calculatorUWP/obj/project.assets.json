@@ -22015,10 +22015,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Baiyubest\\Documents\\Visual Studio 2017\\Projects\\CalculatorUWP\\CalculatorUWP\\CalculatorUWP.csproj",
+      "projectUniqueName": "C:\\Users\\Baiyubest\\Documents\\Visual Studio 2017\\Projects\\UWP_Calculator\\CalculatorUWP\\CalculatorUWP.csproj",
       "projectName": "CalculatorUWP",
-      "projectPath": "C:\\Users\\Baiyubest\\Documents\\Visual Studio 2017\\Projects\\CalculatorUWP\\CalculatorUWP\\CalculatorUWP.csproj",
-      "outputPath": "C:\\Users\\Baiyubest\\Documents\\Visual Studio 2017\\Projects\\CalculatorUWP\\CalculatorUWP\\obj\\",
+      "projectPath": "C:\\Users\\Baiyubest\\Documents\\Visual Studio 2017\\Projects\\UWP_Calculator\\CalculatorUWP\\CalculatorUWP.csproj",
+      "outputPath": "C:\\Users\\Baiyubest\\Documents\\Visual Studio 2017\\Projects\\UWP_Calculator\\CalculatorUWP\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "uap10.0.10240"

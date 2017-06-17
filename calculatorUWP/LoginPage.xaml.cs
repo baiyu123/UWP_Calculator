@@ -28,6 +28,7 @@ namespace CalculatorUWP
             this.InitializeComponent();
             myConn = new Connector();
         }
+     
         //register a new user
         private void Click_Register(object sender, RoutedEventArgs e)
         {
@@ -35,15 +36,22 @@ namespace CalculatorUWP
             messageBox.Text = myConn.RegisterNewUser(userNameTextBox.Text, passwordTextBox.Text);
         }
 
+        //login user
         private void Click_Login(object sender, RoutedEventArgs e)
         {
             string msg = myConn.LoginUser(userNameTextBox.Text, passwordTextBox.Text);
             if (msg == "Success")
             {
-                this.Frame.Navigate(typeof(MainPage));
+                
+                this.Frame.Navigate(typeof(MainPage),userNameTextBox.Text);
                 return;
             }
             messageBox.Text = msg;
+        }
+
+        private void Click_back(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
         }
     }
 }

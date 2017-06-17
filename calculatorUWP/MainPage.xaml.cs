@@ -28,20 +28,28 @@ namespace CalculatorUWP
         private double secondOperand;
         private string currOperator;
         private bool finishedAround;
+        private string currUser;
+        Connector myConn;
 
         public MainPage()
         {
             this.InitializeComponent();
-
+            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
+            myConn = new Connector();
+            currUser = "";
             numStr = "0";
             finishedAround = true;
+        }
+
+        public void SetUser(string user) {
+            currUser = user;
         }
 
         //when numbers are clicked
         private void Click_Num(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
-            //Just boot up or just finished around of calculation
+            //Just boot up or just finished a round of calculation
             if (finishedAround)
             {
                 numStr = btn.Content.ToString();
@@ -65,6 +73,8 @@ namespace CalculatorUWP
         //when equal sign is clicked
         private void Click_Calculate(object sender, RoutedEventArgs e)
         {
+            string operationStr = "";
+            operationStr = firstOperand.ToString()+currOperator+numStr+" = ";
             secondOperand = Convert.ToDouble(numStr);
             if (currOperator == "+")
             {
@@ -85,8 +95,16 @@ namespace CalculatorUWP
             //reset operator
             currOperator = "";
             numStr = firstOperand.ToString();
+            operationStr += numStr;
             Display.Text = numStr;
             finishedAround = true;
+            StoreHistory(operationStr);
+        }
+
+        private void StoreHistory(string his) {
+            Debug.WriteLine(his);
+            if(currUser != "")
+            myConn.InsertAnOperation(currUser ,his);
         }
 
         //clear everything
@@ -104,6 +122,17 @@ namespace CalculatorUWP
         private void GotoLogin(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(LoginPage));
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            string user = (string)e.Parameter;
+            if (user != null)
+            {
+                currUser = user;
+            }
+            welcomeText.Text = "Welcome " + currUser;
         }
     }
 }

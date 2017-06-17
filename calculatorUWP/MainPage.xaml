@@ -67,6 +67,8 @@
             </Border>
 
         </Grid>
-        <Button Content="Button" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Bottom" Click="GotoLogin"/>
+        <Button Content="Login" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Bottom" Click="GotoLogin"/>
+        <Button Content="History" Grid.Column="1" HorizontalAlignment="Right" Grid.Row="2" VerticalAlignment="Bottom" Click="GotoLogin"/>
+        <TextBlock x:Name="welcomeText" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Margin="0,20,0,20" TextWrapping="Wrap" Text="Welcome" VerticalAlignment="Bottom"/>
     </Grid>
 </Page>

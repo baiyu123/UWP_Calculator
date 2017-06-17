@@ -76,6 +76,22 @@ namespace CalculatorUWP
             return "Successfully registered.";
         }
 
+        public void InsertAnOperation(string username, string operation) {
+             try
+            {
+                conn.Open();
+                string sql = "INSERT INTO History VALUES ('" + username + "','" + operation + "')";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString());
+                Debug.WriteLine("Adding new operation failed.");
+            }
+            conn.Close();
+        }
+
         public string Hash(string password)
         {
             var bytes = new UTF8Encoding().GetBytes(password);
