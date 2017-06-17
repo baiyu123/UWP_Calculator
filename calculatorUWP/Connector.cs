@@ -21,6 +21,7 @@ namespace CalculatorUWP
         public string LoginUser(string username, string password) {
             string hashPass = GetPassword(username);
             if (hashPass == "") return "User does not exist.";
+            else if (hashPass == "SQLConnectionFail") return "SQL connection failed.";
             if (hashPass != Hash(password)) return "Invalid password.";
             return "Success";
         }
@@ -35,7 +36,7 @@ namespace CalculatorUWP
                 string sql = "SELECT Password FROM users WHERE UserName = '" + username + "'";
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
                 MySqlDataReader rdr = cmd.ExecuteReader();
-                
+
                 while (rdr.Read())
                 {
                     result = rdr.GetString(0);
@@ -45,10 +46,14 @@ namespace CalculatorUWP
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.ToString());
-                Debug.WriteLine("we have exception");
+                result = "SQLConnectionFail";
+                Debug.WriteLine("Cannot connect to SQL database.");
             }
-            conn.Close();
-            Debug.WriteLine("Done.");
+            finally
+            {
+                conn.Close();
+                Debug.WriteLine("Done.");
+            }
             return result;
         }
 
@@ -62,7 +67,11 @@ namespace CalculatorUWP
 
         //register new user to database
         public string RegisterNewUser(string username, string password) {
-            if (checkUserExist(username)) {
+            string dbPassword = GetPassword(username);
+            if (dbPassword == "SQLConnectionFail") {
+                return "SQL connection failed.";
+            }
+            else if (dbPassword != "") {
                 return "Username already Registered.";
             }
             string hashPassword = Hash(password);
