@@ -23,12 +23,12 @@ namespace CalculatorUWP
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private string numStr;
+        private string numStr; //string in display
         private double firstOperand;
         private double secondOperand;
         private string currOperator;
-        private bool finishedAround;
-        private string currUser;
+        private bool finishedAround; //set true when around just finished
+        private string currUser;    //current user
         Connector myConn;
 
         public MainPage()
@@ -73,6 +73,8 @@ namespace CalculatorUWP
         //when equal sign is clicked
         private void Click_Calculate(object sender, RoutedEventArgs e)
         {
+            //avoid calculate several time for same operation
+            if (finishedAround) return;
             string operationStr = "";
             operationStr = firstOperand.ToString()+currOperator+numStr+" = ";
             secondOperand = Convert.ToDouble(numStr);
@@ -133,6 +135,19 @@ namespace CalculatorUWP
                 currUser = user;
             }
             welcomeText.Text = "Welcome " + currUser;
+        }
+
+        private void Click_History(object sender, RoutedEventArgs e)
+        {
+            if (currUser != "")
+            {
+                List<string> his = myConn.fetchHistory(currUser);
+                this.Frame.Navigate(typeof(HistoryPage), his);
+            }
+            else
+            {
+                this.Frame.Navigate(typeof(HistoryPage));
+            }
         }
     }
 }

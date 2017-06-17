@@ -4,6 +4,7 @@ using System.Data;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 using System.Text;
+using System.Collections.Generic;
 
 namespace CalculatorUWP
 {
@@ -16,6 +17,7 @@ namespace CalculatorUWP
             conn = new MySqlConnection(connStr);
         }
 
+        //login user with password
         public string LoginUser(string username, string password) {
             string hashPass = GetPassword(username);
             if (hashPass == "") return "User does not exist.";
@@ -23,6 +25,7 @@ namespace CalculatorUWP
             return "Success";
         }
 
+        //get user hashed password from database
         private string GetPassword(string username) {
             string result ="";
             try
@@ -49,6 +52,7 @@ namespace CalculatorUWP
             return result;
         }
 
+        //check if user exist by fetching its password
         private bool checkUserExist(string username) {
             if (GetPassword(username) != "") {
                 return true;
@@ -56,6 +60,7 @@ namespace CalculatorUWP
             return false;
         }
 
+        //register new user to database
         public string RegisterNewUser(string username, string password) {
             if (checkUserExist(username)) {
                 return "Username already Registered.";
@@ -76,6 +81,7 @@ namespace CalculatorUWP
             return "Successfully registered.";
         }
 
+        //insert operation to history table
         public void InsertAnOperation(string username, string operation) {
              try
             {
@@ -92,6 +98,36 @@ namespace CalculatorUWP
             conn.Close();
         }
 
+        //get history from history table
+        public List<string> fetchHistory(string username) {
+            string result = "";
+            List<string> results = new List<string>();
+            try
+            {
+                Debug.WriteLine("Connecting to MySQL...");
+                conn.Open();
+                string sql = "SELECT Operation FROM history WHERE UserName = '" + username + "'";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                MySqlDataReader rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    result = rdr.GetString(0);
+                    results.Add(result);
+                }
+                rdr.Close();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString());
+                Debug.WriteLine("we have exception");
+            }
+            conn.Close();
+            Debug.WriteLine("Done.");
+            return results;
+        }
+
+        //hash password
         public string Hash(string password)
         {
             var bytes = new UTF8Encoding().GetBytes(password);

@@ -437,3 +437,8 @@ C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\Calculat
 C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\bin\x86\Debug\HistoryPage.xbf
+C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\obj\x86\Debug\HistoryPage.g.i.cs
+C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\obj\x86\Debug\HistoryPage.g.cs
+C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\obj\x86\Debug\HistoryPage.xaml
+C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\obj\x86\Debug\HistoryPage.xbf

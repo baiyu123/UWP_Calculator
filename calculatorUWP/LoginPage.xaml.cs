@@ -36,13 +36,12 @@ namespace CalculatorUWP
             messageBox.Text = myConn.RegisterNewUser(userNameTextBox.Text, passwordTextBox.Text);
         }
 
-        //login user
+        //login user. if it is successful, back to main page else display error
         private void Click_Login(object sender, RoutedEventArgs e)
         {
             string msg = myConn.LoginUser(userNameTextBox.Text, passwordTextBox.Text);
             if (msg == "Success")
             {
-                
                 this.Frame.Navigate(typeof(MainPage),userNameTextBox.Text);
                 return;
             }
