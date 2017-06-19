@@ -13,7 +13,7 @@ namespace CalculatorUWP
         MySqlConnection conn;
         public Connector()
         {
-            string connStr = "server=localhost;user=root;database=calculatordb;port=3306;password=baiyusql;SslMode=None;";
+            string connStr = "server=localhost;user=root;database=calculatordb;port=3306;password=baiyusql;SslMode=None; Connection Timeout = 1;";
             conn = new MySqlConnection(connStr);
         }
 

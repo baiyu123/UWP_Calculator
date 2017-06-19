@@ -28,6 +28,7 @@ namespace CalculatorUWP
         /// </summary>
         public App()
         {
+            //Setting.LoadTheme();
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }

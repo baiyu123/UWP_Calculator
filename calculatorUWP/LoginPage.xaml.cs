@@ -52,5 +52,21 @@ namespace CalculatorUWP
         {
             this.Frame.Navigate(typeof(MainPage));
         }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e) {
+            CheckTheme();
+        }
+        //change theme according to setting
+        private void CheckTheme()
+        {
+            if (Setting.GetThemeString() == "Dark")
+            {
+                RequestedTheme = ElementTheme.Dark;
+            }
+            else
+            {
+                RequestedTheme = ElementTheme.Light;
+            }
+        }
     }
 }

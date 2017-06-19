@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using System.Diagnostics;
+using Windows.UI;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -135,6 +136,19 @@ namespace CalculatorUWP
                 currUser = user;
             }
             welcomeText.Text = "Welcome " + currUser;
+            //checking theme
+            CheckTheme();
+        }
+
+        private void CheckTheme() {
+            if (Setting.GetThemeString() == "Dark")
+            {
+                RequestedTheme = ElementTheme.Dark;
+            }
+            else
+            {
+                RequestedTheme = ElementTheme.Light;
+            }
         }
 
         private void Click_History(object sender, RoutedEventArgs e)
@@ -148,6 +162,11 @@ namespace CalculatorUWP
             {
                 this.Frame.Navigate(typeof(HistoryPage));
             }
+        }
+
+        private void Click_Setting(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(SettingPage));
         }
     }
 }

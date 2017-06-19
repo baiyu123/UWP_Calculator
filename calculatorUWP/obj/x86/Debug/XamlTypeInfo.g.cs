@@ -132,19 +132,21 @@ namespace CalculatorUWP.CalculatorUWP_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
+            _typeNameTable = new string[6];
             _typeNameTable[0] = "CalculatorUWP.HistoryPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "CalculatorUWP.LoginPage";
             _typeNameTable[4] = "CalculatorUWP.MainPage";
+            _typeNameTable[5] = "CalculatorUWP.SettingPage";
 
-            _typeTable = new global::System.Type[5];
+            _typeTable = new global::System.Type[6];
             _typeTable[0] = typeof(global::CalculatorUWP.HistoryPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::CalculatorUWP.LoginPage);
             _typeTable[4] = typeof(global::CalculatorUWP.MainPage);
+            _typeTable[5] = typeof(global::CalculatorUWP.SettingPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -182,6 +184,7 @@ namespace CalculatorUWP.CalculatorUWP_XamlTypeInfo
         private object Activate_0_HistoryPage() { return new global::CalculatorUWP.HistoryPage(); }
         private object Activate_3_LoginPage() { return new global::CalculatorUWP.LoginPage(); }
         private object Activate_4_MainPage() { return new global::CalculatorUWP.MainPage(); }
+        private object Activate_5_SettingPage() { return new global::CalculatorUWP.SettingPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -218,6 +221,13 @@ namespace CalculatorUWP.CalculatorUWP_XamlTypeInfo
             case 4:   //  CalculatorUWP.MainPage
                 userType = new global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_4_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  CalculatorUWP.SettingPage
+                userType = new global::CalculatorUWP.CalculatorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_SettingPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

@@ -12,7 +12,6 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using System.Diagnostics;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -21,28 +20,28 @@ namespace CalculatorUWP
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class HistoryPage : Page
+    public sealed partial class SettingPage : Page
     {
-        public HistoryPage()
+        public SettingPage()
         {
             this.InitializeComponent();
+        }
+
+        private void Click_back(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            CheckTheme();
-            List<string> his = (List<string>)e.Parameter;
-            if (his == null) return;
-            string hisStr = "";
-            foreach(string str in his) {
-                hisStr += str + System.Environment.NewLine;
+            if (Setting.GetThemeString() == "Dark")
+            {
+                DarkButton.IsChecked = true;
             }
-            hisText.Text = hisStr;
-        }
-
-        private void Click_Back(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainPage));
+            else {
+                LightButton.IsChecked = true;
+            }
+            CheckTheme();
         }
 
         private void CheckTheme()
@@ -55,6 +54,18 @@ namespace CalculatorUWP
             {
                 RequestedTheme = ElementTheme.Light;
             }
+        }
+
+        private void Click_Light(object sender, RoutedEventArgs e)
+        {
+            Setting.SetLightTheme();
+            RequestedTheme = ElementTheme.Light;
+        }
+
+        private void Click_Dark(object sender, RoutedEventArgs e)
+        {
+            Setting.SetDarkTheme();
+            RequestedTheme = ElementTheme.Dark;
         }
     }
 }

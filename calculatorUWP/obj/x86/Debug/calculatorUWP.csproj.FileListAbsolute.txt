@@ -442,3 +442,8 @@ C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\Calculat
 C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\obj\x86\Debug\HistoryPage.g.cs
 C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\obj\x86\Debug\HistoryPage.xaml
 C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\obj\x86\Debug\HistoryPage.xbf
+C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\bin\x86\Debug\SettingPage.xbf
+C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\obj\x86\Debug\SettingPage.g.i.cs
+C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\obj\x86\Debug\SettingPage.g.cs
+C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\obj\x86\Debug\SettingPage.xaml
+C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\obj\x86\Debug\SettingPage.xbf
