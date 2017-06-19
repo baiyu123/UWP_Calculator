@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-19T06:59:18.800</Modified>
+      <Modified>2017-06-19T07:12:21.990</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\bin\x86\Debug\CalculatorUWP.exe">
       <PackagePath>entrypoint\CalculatorUWP.exe</PackagePath>
-      <Modified>2017-06-19T06:59:18.228</Modified>
+      <Modified>2017-06-19T07:12:21.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Baiyubest\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -548,11 +548,11 @@
     <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-19T06:59:18.609</Modified>
+      <Modified>2017-06-19T07:12:21.830</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Baiyubest\Documents\Visual Studio 2017\Projects\UWP_Calculator\CalculatorUWP\bin\x86\Debug\Core\CalculatorUWP.exe">
       <PackagePath>CalculatorUWP.exe</PackagePath>
-      <Modified>2017-06-19T06:59:18.797</Modified>
+      <Modified>2017-06-19T07:12:21.982</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
